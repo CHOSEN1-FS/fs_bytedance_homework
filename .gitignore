@@ -1,0 +1,30 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets & local config
+**/local.properties
+
+# Build outputs
+**/build/
+**/.gradle/
+**/captures/
+**/.externalNativeBuild/
+**/.cxx/
+
+# IDE (machine-specific)
+**/.idea/workspace.xml
+**/.idea/caches/
+**/.idea/libraries/
+**/.idea/modules.xml
+**/.idea/navEditor.xml
+**/.idea/assetWizardSettings.xml
+**/*.iml
+
+# Binaries & archives (do not upload)
+*.apk
+*.aab
+*.zip
+*.exe
+*.dll
+*.so

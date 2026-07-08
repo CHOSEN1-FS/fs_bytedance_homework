@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="24dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:text="欢迎登录"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="请登录您的账户"
+        android:textSize="14sp"
+        android:textColor="#666666" />
+
+    <EditText
+        android:id="@+id/id_et_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:hint="请输入邮箱(123)"
+         />
+
+    <EditText
+        android:id="@+id/id_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:hint="请输入密码(123)" />
+
+    <!-- 忘记密码 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginBottom="32dp"
+        android:text="忘记密码?"
+        android:textColor="#2196F3"
+        android:textSize="14sp" />
+
+    <!-- 登录按钮 -->
+    <Button
+        android:id="@+id/id_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:text="登录"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2196F3"
+        android:textSize="16sp" />
+
+    <!-- 分隔线 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="#E0E0E0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#FFFFFF"
+            android:paddingHorizontal="16dp"
+            android:text="或者"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <!-- 第三方登录按钮容器 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp"
+        android:gravity="center">
+
+        <!-- 微信登录按钮 -->
+        <Button
+            android:id="@+id/id_btn_wechat_login"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="微信登录"
+            android:textColor="#000000"
+            app:icon="@drawable/wechat"
+            app:iconTint="@null"
+            app:iconPadding="8dp"
+            app:iconGravity="textStart"
+            app:backgroundTint="#FFFFFF"
+            />
+
+        <!-- Apple登录按钮 -->
+        <Button
+            android:id="@+id/id_btn_apple_login"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Apple苹果"
+            android:textColor="#000000"
+            app:icon="@drawable/apple"
+            app:iconTint="@null"
+            app:iconPadding="8dp"
+            app:iconGravity="textStart"
+            app:backgroundTint="#FFFFFF"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:text="还没有帐户？"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+        <TextView
+            android:text="立即注册"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#2196F3"
+            />
+    </LinearLayout>
+
+</LinearLayout>
