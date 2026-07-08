@@ -142,7 +142,6 @@ Day3 通过 `local.properties` 读取 API Key，**不会写入源码仓库**：
    ```
 4. 编辑 `Day3/local.properties`，设置 `AMAP_API_KEY=你的Key`
 
-> ⚠️ **安全提示**：若 API Key 曾提交到 GitHub，请在高德控制台**立即作废并重新生成** Key。清空仓库文件无法擦除 Git 历史中的旧记录，需按下方步骤强制重写历史。
 
 ---
 
