@@ -160,25 +160,6 @@ cd Day3
 
 Windows 下使用 `gradlew.bat` 代替 `./gradlew`。
 
----
-
-## 不应上传的文件
-
-以下文件/目录为本地生成或机器相关，**请勿提交到 Git**：
-
-| 路径 | 原因 |
-|------|------|
-| `build/` | Gradle 编译产物 |
-| `.gradle/` | Gradle 缓存 |
-| `local.properties` | 本机 Android SDK 路径 |
-| `.idea/workspace.xml` | IDE 个人工作区状态 |
-| `.idea/caches/` | IDE 缓存 |
-| `*.iml` | IDE 模块文件 |
-| `.DS_Store` | macOS 系统文件 |
-
-各子项目已包含 `.gitignore`，上传源码时遵循即可。
-
----
 
 ## 学习路径
 
